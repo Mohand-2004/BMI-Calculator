@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget{
         title: Row(
           children: [
             Padding(
-              padding: EdgeInsets.only(top: 25.h,left: 6.w),
+              padding: EdgeInsets.only(top: 22.h,left: 6.w),
               child: Text(
                 'BMI Calculator',
                 style: TextStyle(
@@ -29,13 +29,13 @@ class HomePage extends StatelessWidget{
             ),
           ],
         ),
-        toolbarHeight: 54.h
+        toolbarHeight: 50.h
       ),
       body: SingleChildScrollView(
         child: Container(
           color: Colors.white,
           width: ScreenUtil().screenWidth,
-          height: ScreenUtil().screenHeight*0.89,
+          height: ScreenUtil().screenHeight*0.872,
           child: Column(
             children: <Widget>[
               // safe space
