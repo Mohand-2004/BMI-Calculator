@@ -99,7 +99,7 @@ class _AgeSelectorState extends State<AgeSelector>{
                         flex: 30,
                         child: TextFormField(
                           inputFormatters: <TextInputFormatter>[
-                          FilteringTextInputFormatter.digitsOnly
+                            FilteringTextInputFormatter.digitsOnly
                           ],
                           onFieldSubmitted: (value){
                             int age = int.tryParse(value) ?? user.age;
@@ -114,6 +114,11 @@ class _AgeSelectorState extends State<AgeSelector>{
                                 widget.controller.text = '${user.age}';
                               });
                             }
+                          },
+                          onTapOutside: (event){
+                            // pop the keyboard when foucus outside
+                            // as in iOS the keboard won't pop automaticly
+                            FocusManager.instance.primaryFocus!.unfocus();
                           },
                           controller: widget.controller,
                           keyboardType: const TextInputType.numberWithOptions(

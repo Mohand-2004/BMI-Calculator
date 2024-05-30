@@ -488,7 +488,7 @@ class ResultScreen extends StatelessWidget{
                     )
               ),
         
-              // bottom space
+              // bottom space for ios devicesies
               SizedBox(height: 13.h,),
             ],
           ),
