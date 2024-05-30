@@ -263,6 +263,9 @@ class HomePage extends StatelessWidget{
                   ),
                 )
               ),
+
+              // bottom space
+              SizedBox(height: 13.h,),
             ],
           ),
         ),

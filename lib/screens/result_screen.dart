@@ -489,7 +489,7 @@ class ResultScreen extends StatelessWidget{
               ),
         
               // bottom space
-              SizedBox(height: 10.h,),
+              SizedBox(height: 13.h,),
             ],
           ),
         ),
