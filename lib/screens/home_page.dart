@@ -35,7 +35,7 @@ class HomePage extends StatelessWidget{
         child: Container(
           color: Colors.white,
           width: ScreenUtil().screenWidth,
-          height: ScreenUtil().screenHeight*0.872,
+          height: ScreenUtil().screenHeight-70.h-38,
           child: Column(
             children: <Widget>[
               // safe space
@@ -263,9 +263,6 @@ class HomePage extends StatelessWidget{
                   ),
                 )
               ),
-
-              // bottom space for iOS devicesies
-              SizedBox(height: 13.h,),
             ],
           ),
         ),
