@@ -6,6 +6,7 @@ import 'package:bmi_calculator/widgets/height_selector.dart';
 import 'package:bmi_calculator/widgets/weight_selector.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'dart:io' show Platform;
 import '../main.dart';
 class HomePage extends StatelessWidget{
   const HomePage({super.key});
@@ -35,7 +36,7 @@ class HomePage extends StatelessWidget{
         child: Container(
           color: Colors.white,
           width: ScreenUtil().screenWidth,
-          height: ScreenUtil().screenHeight-70.h-38,
+          height: ScreenUtil().screenHeight*(Platform.isIOS ? 0.84 : 0.88),
           child: Column(
             children: <Widget>[
               // safe space
