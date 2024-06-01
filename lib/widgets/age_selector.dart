@@ -92,7 +92,7 @@ class _AgeSelectorState extends State<AgeSelector>{
                   child: Column(
                     children: <Widget>[
                       // top space
-                      const Expanded(flex: 42,child: SizedBox()),
+                      const Expanded(flex: 36,child: SizedBox()),
 
                       // age textfeild
                       Expanded(
@@ -140,7 +140,7 @@ class _AgeSelectorState extends State<AgeSelector>{
                       ),
 
                       // bottom space
-                      const Expanded(flex: 28,child: SizedBox()),
+                      const Expanded(flex: 34,child: SizedBox()),
                     ],
                   )
                 ),
